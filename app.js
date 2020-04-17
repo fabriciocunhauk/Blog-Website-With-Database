@@ -14,7 +14,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost:27017/logDB', {
+mongoose.connect('mongodb://localhost:27017/blogDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
