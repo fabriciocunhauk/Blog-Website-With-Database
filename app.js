@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost:27017/blogDB', {
 const postSchema = {
   title: String,
   content: String
-}
+};
 
 const Post = mongoose.model("Post", postSchema);
 
@@ -79,7 +79,6 @@ app.get("/posts/:postId", function(req, res) {
       content: post.content
     });
   });
-
 });
 
 app.listen(3000, function() {
